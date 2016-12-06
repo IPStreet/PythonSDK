@@ -1,7 +1,5 @@
-import json
-
 from IPStreet import client, query
-i
+
 
 if __name__ == '__main__':
 

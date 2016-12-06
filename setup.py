@@ -7,7 +7,7 @@ setup(
   author = 'Reed Jessen',
   author_email = 'Reed@IPStreet.com',
   url = 'https://github.com/IPStreet/PythonSDK', # use the URL to the github repo
-  download_url = 'https://github.com/IPStreet/PythonSDK/tarball/0.1', # I'll explain this in a second
+  download_url = 'https://github.com/IPStreet/PythonSDK/archive/v0.1.tar.gz', # I'll explain this in a second
   keywords = ['patent', 'SDK', 'IP Street', 'API', 'wrapper'], # arbitrary keywords
   classifiers = [],
 )

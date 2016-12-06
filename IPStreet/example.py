@@ -1,13 +1,14 @@
 import json
 
 from IPStreet import client, query
+i
 
 if __name__ == '__main__':
 
     ########################################################################
     #    Basic configuration data                                          #
     ########################################################################
-    apikey = '5AsaMTe6HUypUlAqv3Rw3E6Pvjo4dYL64Rr2z2va'
+    apikey = 'API_KEY'
     api_version = 2
 
     ########################################################################

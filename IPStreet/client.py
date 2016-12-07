@@ -34,7 +34,7 @@ class Client:
         self.endpoint_claim_element = self.endpoint_claim_parser + '/claim_element'
 
     def check_service_status(self):
-        """"Checks the status of all IP Street Endpoints"""
+        """"Not Yet Implemented, Checks the status of all IP Street Endpoints"""
         pass
 
     def send(self, query_object):

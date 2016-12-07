@@ -38,9 +38,7 @@ class Client:
         pass
 
     def send(self, query_object):
-
-        # if (isinstance(query_object, query.Query) or query_object is None):
-        #     raise SendError("The object you are attempting to send is not a valid query object")
+        """Sends a instantiated query object, returns a list of dicts"""
 
         if isinstance(query_object, query.FullTextSearch):
             self.endpoint = self.endpoint_full_text
@@ -85,6 +83,7 @@ class Client:
             raise SendError("The object you are attempting to send is not a valid query object")
 
     def get_default_page(self):
+        """Get the first page of any given request, return results as json object"""
         r = requests.post(url=self.endpoint, headers=self.headers, data=json.dumps(self.payload))
         self.parse_response_codes(r, self.debug)
         results = r.json()
@@ -95,6 +94,7 @@ class Client:
         return results
 
     def get_all_pages(self):
+        """Gets the 2nd page and all subsequent pages of a given response, returns all pages as json object"""
         pages = []
 
         first_page = self.get_default_page()
@@ -111,6 +111,7 @@ class Client:
         return pages
 
     def pages_to_assets(self,pages):
+        """Converts all json object pages to a pythonic list of dicts"""
         assets = []
         # print(pages)
         for page in pages:
@@ -120,6 +121,7 @@ class Client:
         return assets
 
     def parse_response_codes(self, response, debug):
+        """Parses the reponse code and raises a APIConnection error if not 200"""
         if response.status_code == 200:
             if debug:
                 print("Request successful")

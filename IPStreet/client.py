@@ -150,3 +150,6 @@ class Client:
 
         if response.status_code == 503:
             raise APIConnectionError("IP Street service is up but overloaded with requests")
+
+        else:
+            raise APIConnectionError("Response Code {}: An Unknown error has occured.".format(str(response.status_code)))

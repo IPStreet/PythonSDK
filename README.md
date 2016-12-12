@@ -2,7 +2,10 @@
 An SDK for interacting with the IP Street API in Python
 
 ## Usage
-
+### Install
+```python
+pip install IPStreet
+```
 ### Instantiate a Client
 ```python
 client = client.Client(apikey=apikey, api_version=api_version)

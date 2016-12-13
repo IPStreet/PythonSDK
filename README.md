@@ -19,7 +19,7 @@ query = query.PatentData()
 query.add_keywords('battery')
 query.add_owner('Tesla Motors')
 ```
-### Send you Query with the Client
+### Send your Query with the Client
 ```python
 results = client.send(query)
 ```

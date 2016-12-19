@@ -91,7 +91,7 @@ class Query:
         except:
             error.ParamsInvalidError("end_date requires a date object in %Y-%m-%d format")
 
-        if str(start_date_type) not in ['earliest_date_filed', 'application_date',
+        if str(start_date_type) not in ['earliest_file_date', 'application_date',
                                 'publication_date', 'grant_date', 'expiration_date']:
             raise error.ParamsInvalidError("start_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date")
         else:
@@ -104,7 +104,7 @@ class Query:
         except:
             error.ParamsInvalidError("end_date requires a date object in %Y-%m-%d format")
 
-        if str(end_date_type) not in ['earliest_date_filed', 'application_date',
+        if str(end_date_type) not in ['earliest_file_date', 'application_date',
                                             'publication_date', 'grant_date', 'expiration_date']:
             raise error.ParamsInvalidError(
                 "end_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date")

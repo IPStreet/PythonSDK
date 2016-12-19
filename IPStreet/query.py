@@ -93,7 +93,7 @@ class Query:
 
         if str(start_date_type) not in ['earliest_file_date', 'application_date',
                                 'publication_date', 'grant_date', 'expiration_date']:
-            raise error.ParamsInvalidError("start_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date")
+            raise error.ParamsInvalidError("end_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date'.")
         else:
             self.q['start_date'] = input
             self.q['start_date_type'] = start_date_type
@@ -107,7 +107,7 @@ class Query:
         if str(end_date_type) not in ['earliest_file_date', 'application_date',
                                             'publication_date', 'grant_date', 'expiration_date']:
             raise error.ParamsInvalidError(
-                "end_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date")
+                "end_date_type must be 'earliest_date_filed','application_date', 'publication_date','grant_date', or 'expiration_date'.")
         else:
             self.q['end_date'] = input
             self.q['end_date_type'] = end_date_type

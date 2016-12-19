@@ -44,21 +44,28 @@ class Query:
 
     def add_grant_number(self, input):
         if 'grant_number' in self.q.keys():
-            self.q['grant_number'] = self.q['grant_number'] + ', ' + (str(input))
+            current_list = self.q['grant_number']
+            current_list.append(str(input))
+            self.q['grant_number'] = current_list
         else:
-            self.q['grant_number'] = str(input)
+            self.q['grant_number'] = [str(input)]
 
     def add_application_number(self, input):
         if 'application_number' in self.q.keys():
-            self.q['application_number'] = self.q['application_number'] + ', ' + (str(input))
+            current_list = self.q['application_number']
+            current_list.append(str(input))
+            self.q['application_number'] = current_list
         else:
-            self.q['application_number'] = str(input)
+            self.q['application_number'] = [str(input)]
+
 
     def add_publication_number(self, input):
         if 'publication_number' in self.q.keys():
-            self.q['publication_number'] = self.q['publication_number'] + ', ' + (str(input))
+            current_list = self.q['publication_number']
+            current_list.append(str(input))
+            self.q['publication_number'] = current_list
         else:
-            self.q['publication_number'] = str(input)
+            self.q['publication_number'] = [str(input)]
 
     def add_prior_owner(self, input):
         if 'prior_owner' in self.q.keys():

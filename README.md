@@ -1,5 +1,4 @@
-# PythonSDK
-An SDK for interacting with the IP Street API in Python
+# An Python Wrapper for the IP Street API
 
 ## Usage
 ### Install

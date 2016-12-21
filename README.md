@@ -1,4 +1,4 @@
-# An Python Wrapper for the IP Street API
+# A Python Wrapper for the IP Street API
 IP Street is a patent data and analytics API service.  It enables users to integrate patent data and analytical algorithms into their applications without the need to build or manage the significant infrastrucutre required to do so well.
 ## Usage
 ### Install

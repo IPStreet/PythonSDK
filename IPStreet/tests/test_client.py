@@ -3,7 +3,7 @@ from IPStreet import client, query
 
 class ClientTestCase(unittest.TestCase):
     def setUp(self):
-        self.api_key = "5AsaMTe6HUypUlAqv3Rw3E6Pvjo4dYL64Rr2z2va"
+        self.api_key = "IPSTREET_API_KEY"
         self.api_version = 2
         self.client = client.Client(apikey=self.api_key , api_version=2)
 

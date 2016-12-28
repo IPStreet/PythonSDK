@@ -8,37 +8,37 @@ class Query:
 
     def add_keywords(self, input):
         if 'keywords' in self.q.keys():
-            self.q['keywords'] = self.q['keywords'] + ', ' + (str(input))
+            self.q['keywords'] = self.q['keywords'] + ' OR ' + (str(input))
         else:
             self.q['keywords'] = str(input)
 
     def add_owner(self, input):
         if 'owner' in self.q.keys():
-            self.q['owner'] = self.q['owner'] + ', ' + (str(input))
+            self.q['owner'] = self.q['owner'] + ' OR ' + (str(input))
         else:
             self.q['owner'] = str(input)
 
     def add_ultimate_parent(self, input):
         if 'ultimate_parent' in self.q.keys():
-            self.q['ultimate_parent'] = self.q['ultimate_parent'] + ', ' + (str(input))
+            self.q['ultimate_parent'] = self.q['ultimate_parent'] + ' OR ' + (str(input))
         else:
             self.q['ultimate_parent'] = str(input)
 
     def add_inventor(self, input):
         if 'inventor' in self.q.keys():
-            self.q['inventor'] = self.q['inventor'] + ', ' + (str(input))
+            self.q['inventor'] = self.q['inventor'] + ' OR ' + (str(input))
         else:
             self.q['inventor'] = str(input)
 
     def add_patent_class(self, input):
         if 'patent_class' in self.q.keys():
-            self.q['patent_class'] = self.q['patent_class'] + ', ' + (str(input))
+            self.q['patent_class'] = self.q['patent_class'] + ' OR ' + (str(input))
         else:
             self.q['patent_class'] = str(input)
 
     def add_patent_office(self, input):
         if 'patent_office' in self.q.keys():
-            self.q['patent_office'] = self.q['patent_office'] + ', ' + (str(input))
+            self.q['patent_office'] = self.q['patent_office'] + ' OR ' + (str(input))
         else:
             self.q['patent_office'] = str(input)
 

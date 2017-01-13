@@ -22,3 +22,6 @@ query.add_owner('Tesla Motors')
 ```python
 results = client.send(query)
 ```
+
+## Best Practices
+Break large queries into smaller queries and write the to disk as they complete. If you query response is too large, your local device will run out of memory causing a parsing error.  The definition of "large queries" in this context is dependant on you local machines memory availability.
